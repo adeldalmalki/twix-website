@@ -3,337 +3,360 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Twix Digital Gateway Ltd — Healthcare Technology Solutions</title>
-<meta name="description" content="Twix Digital Gateway Ltd builds intelligent healthcare communication systems. Based in Ras Al Khaimah, UAE.">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Twix Digital Gateway — Healthcare Technology & Digital Wellness</title>
+<meta name="description" content="Healthcare technology, diabetes management, obesity treatment, and digital health solutions by Dr. Adel Almalki. Coming soon: Shefa360 App.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%233B82F6'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='16' font-weight='bold'>TG</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #0A0F1C;
-    --surface: #111827;
-    --surface-hover: #1a2337;
-    --accent: #3B82F6;
-    --accent-glow: rgba(59, 130, 246, 0.15);
-    --text: #E2E8F0;
-    --text-muted: #94A3B8;
-    --text-dim: #64748B;
-    --white: #F8FAFC;
-    --border: rgba(148, 163, 184, 0.08);
-    --gradient-1: #3B82F6;
-    --gradient-2: #06B6D4;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--bg); color: var(--text); line-height: 1.7; overflow-x: hidden;
-  }
-  body.ar {
-    font-family: 'Noto Kufi Arabic', 'DM Sans', sans-serif;
-    direction: rtl; text-align: right;
-  }
-  body.ar .logo { flex-direction: row-reverse; }
-  body.ar .hero-glow { right: auto; left: -10%; }
-  body.ar .section-label { letter-spacing: 0.5px; }
-  body::before {
-    content: ''; position: fixed; inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-    pointer-events: none; z-index: 9999;
-  }
-  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+:root{--bg:#02050B;--sf:rgba(255,255,255,0.025);--sh:rgba(255,255,255,0.05);--ac:#3B82F6;--a2:#06B6D4;--a3:#8B5CF6;--green:#10B981;--amber:#F59E0B;--rose:#F43F5E;--gw:rgba(59,130,246,0.07);--tx:#C8D3E6;--tm:#7A8BA8;--td:#4A5568;--wh:#F1F5F9;--bd:rgba(255,255,255,0.05);--ba:rgba(59,130,246,0.15)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);line-height:1.7;overflow-x:hidden}
+body.ar{font-family:'Noto Kufi Arabic','Inter',sans-serif;direction:rtl;text-align:right}
+.c{max-width:1200px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
 
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 0;
-    backdrop-filter: blur(20px); background: rgba(10, 15, 28, 0.8);
-    border-bottom: 1px solid var(--border);
-  }
-  nav .container { display: flex; justify-content: space-between; align-items: center; }
-  .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-  .logo-mark {
-    width: 38px; height: 38px;
-    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
-    border-radius: 10px; display: flex; align-items: center; justify-content: center;
-    font-weight: 700; font-size: 16px; color: #fff;
-  }
-  .logo-text {
-    font-family: 'Playfair Display', serif;
-    font-size: 18px; font-weight: 600; color: var(--white);
-  }
-  body.ar .logo-text { font-family: 'Noto Kufi Arabic', serif; font-size: 16px; }
-  .nav-right { display: flex; align-items: center; gap: 28px; }
-  .nav-links { display: flex; gap: 32px; list-style: none; }
-  .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; transition: color 0.3s; }
-  .nav-links a:hover { color: var(--white); }
-  .lang-toggle {
-    background: var(--surface); border: 1px solid var(--border); color: var(--text-muted);
-    padding: 6px 14px; border-radius: 8px; font-size: 13px; font-weight: 500;
-    cursor: pointer; transition: all 0.3s; font-family: 'Noto Kufi Arabic', 'DM Sans', sans-serif;
-  }
-  .lang-toggle:hover { background: var(--surface-hover); color: var(--white); }
+/* Animated bg */
+.bgfx{position:fixed;inset:0;pointer-events:none;z-index:0}
+.bgfx::before{content:'';position:absolute;inset:0;background-image:linear-gradient(var(--bd) 1px,transparent 1px),linear-gradient(90deg,var(--bd) 1px,transparent 1px);background-size:60px 60px;opacity:.25}
+.bgfx::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(59,130,246,0.06),transparent)}
 
-  .hero { min-height: 100vh; display: flex; align-items: center; position: relative; padding-top: 80px; }
-  .hero-glow {
-    position: absolute; top: -20%; right: -10%; width: 600px; height: 600px;
-    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-    pointer-events: none; animation: pulse 8s ease-in-out infinite;
-  }
-  @keyframes pulse { 0%,100%{opacity:.5;transform:scale(1)} 50%{opacity:.8;transform:scale(1.1)} }
-  .hero-content { position: relative; z-index: 1; max-width: 720px; }
-  .hero-tag {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--surface); border: 1px solid var(--border);
-    padding: 8px 16px; border-radius: 100px; font-size: 13px; color: var(--text-muted);
-    margin-bottom: 32px; animation: fadeUp 0.8s ease both;
-  }
-  .hero-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: #10B981; animation: blink 2s ease infinite; }
-  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
-  h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(40px,6vw,64px); font-weight: 600; line-height: 1.1;
-    color: var(--white); letter-spacing: -1.5px; margin-bottom: 24px;
-    animation: fadeUp 0.8s 0.1s ease both;
-  }
-  body.ar h1 { font-family: 'Noto Kufi Arabic', serif; font-size: clamp(32px,5vw,52px); letter-spacing: 0; line-height: 1.4; }
-  h1 .gradient { background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-  .hero-desc { font-size: 18px; color: var(--text-muted); max-width: 540px; line-height: 1.8; margin-bottom: 40px; animation: fadeUp 0.8s 0.2s ease both; }
-  .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; animation: fadeUp 0.8s 0.3s ease both; }
-  .btn {
-    display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px;
-    border-radius: 12px; font-size: 15px; font-weight: 500; text-decoration: none;
-    transition: all 0.3s; cursor: pointer; border: none; font-family: inherit;
-  }
-  .btn-primary { background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2)); color: #fff; box-shadow: 0 4px 24px rgba(59,130,246,0.3); }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(59,130,246,0.4); }
-  .btn-ghost { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
-  .btn-ghost:hover { background: var(--surface-hover); }
-  @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 0;backdrop-filter:blur(24px);background:rgba(2,5,11,0.8);border-bottom:1px solid var(--bd);transition:all .3s}
+nav.scrolled{padding:10px 0;background:rgba(2,5,11,0.95)}
+nav .c{display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:36px;height:36px;background:linear-gradient(135deg,var(--ac),var(--a2));border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#fff;box-shadow:0 0 24px rgba(59,130,246,0.3)}
+.logo-text{font-size:16px;font-weight:700;color:var(--wh)}
+.nr{display:flex;align-items:center;gap:20px}
+.nl{display:flex;gap:24px;list-style:none}
+.nl a{color:var(--tm);text-decoration:none;font-size:12px;font-weight:500;transition:color .3s}
+.nl a:hover{color:var(--wh)}
+.lt{background:0;border:1px solid var(--bd);color:var(--tm);padding:5px 14px;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;transition:all .3s;font-family:'Noto Kufi Arabic','Inter',sans-serif}
+.lt:hover{border-color:var(--ba);color:var(--wh)}
 
-  .section { padding: 120px 0; }
-  .section-label { font-size: 12px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
-  .section-title {
-    font-family: 'Playfair Display', serif; font-size: clamp(28px,4vw,40px); font-weight: 600;
-    color: var(--white); margin-bottom: 60px; max-width: 500px; line-height: 1.2;
-  }
-  body.ar .section-title { font-family: 'Noto Kufi Arabic', serif; font-size: clamp(24px,3.5vw,34px); line-height: 1.5; }
+/* Shared */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:12px;font-size:13px;font-weight:600;text-decoration:none;transition:all .4s;cursor:pointer;border:none;font-family:inherit}
+.bp{background:linear-gradient(135deg,var(--ac),var(--a2));color:#fff;box-shadow:0 4px 24px rgba(59,130,246,0.25)}
+.bp:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(59,130,246,0.35)}
+.bgh{background:var(--sf);color:var(--tx);border:1px solid var(--bd)}
+.bgh:hover{background:var(--sh);border-color:var(--ba)}
+.bgreen{background:linear-gradient(135deg,var(--green),#059669);color:#fff;box-shadow:0 4px 24px rgba(16,185,129,0.25)}
+.bgreen:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(16,185,129,0.35)}
+.sl{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--ac);margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.sl::before{content:'';width:20px;height:1px;background:var(--ac)}
+body.ar .sl::before{display:none}body.ar .sl::after{content:'';width:20px;height:1px;background:var(--ac)}
+.st{font-size:clamp(26px,3.5vw,42px);font-weight:800;color:var(--wh);letter-spacing:-1.2px;max-width:560px;line-height:1.12}
+body.ar .st{font-family:'Noto Kufi Arabic',sans-serif;font-size:clamp(22px,3vw,34px);letter-spacing:0;line-height:1.4}
+.rv{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.16,1,.3,1)}.rv.vis{opacity:1;transform:translateY(0)}
+@keyframes fu{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shm{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes ping{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(2)}}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes typ{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-4px)}}
 
-  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-  .service-card {
-    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
-    padding: 36px 32px; transition: all 0.4s; position: relative; overflow: hidden;
-  }
-  .service-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,transparent,var(--accent),transparent); opacity:0; transition:opacity 0.4s; }
-  .service-card:hover { border-color: rgba(59,130,246,0.2); transform: translateY(-4px); }
-  .service-card:hover::before { opacity: 1; }
-  .service-icon { width:48px; height:48px; border-radius:12px; background:var(--accent-glow); display:flex; align-items:center; justify-content:center; font-size:22px; margin-bottom:20px; }
-  .service-card h3 { font-size: 18px; font-weight: 600; color: var(--white); margin-bottom: 12px; }
-  .service-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+/* ═══════ HERO ═══════ */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding:100px 0 60px;overflow:hidden}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none}
+.hero-orb-1{width:600px;height:600px;top:-20%;right:5%;background:rgba(59,130,246,0.05);animation:float 8s ease-in-out infinite}
+.hero-orb-2{width:400px;height:400px;bottom:-10%;left:-5%;background:rgba(139,92,246,0.04);animation:float 10s ease-in-out infinite 2s}
+.hi{display:grid;grid-template-columns:1fr 360px;gap:60px;align-items:center}
+.hb{display:inline-flex;align-items:center;gap:10px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);padding:6px 18px 6px 10px;border-radius:100px;font-size:11px;font-weight:600;color:var(--green);margin-bottom:28px;animation:fu .6s ease both}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--green);position:relative}
+.pulse::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--green);animation:ping 2s ease-in-out infinite}
+h1{font-size:clamp(38px,5vw,60px);font-weight:900;line-height:1.04;color:var(--wh);letter-spacing:-2.5px;margin-bottom:24px;animation:fu .6s .1s ease both}
+body.ar h1{font-family:'Noto Kufi Arabic',sans-serif;font-size:clamp(30px,4vw,48px);letter-spacing:0;line-height:1.3}
+h1 .gr{background:linear-gradient(135deg,var(--ac),var(--a2),var(--a3));background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shm 6s ease infinite}
+h1 .gr2{background:linear-gradient(135deg,var(--green),var(--a2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hd{font-size:16px;color:var(--tm);max-width:500px;line-height:1.8;margin-bottom:36px;animation:fu .6s .2s ease both}
+.hcta{display:flex;gap:14px;flex-wrap:wrap;animation:fu .6s .3s ease both}
 
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-  .founder-photo-wrap { position: relative; width: 260px; margin: 0 auto 24px; }
-  .founder-photo {
-    width: 260px; height: 300px; object-fit: cover; object-position: top center;
-    border-radius: 20px; border: 2px solid var(--border);
-  }
-  .founder-photo-wrap::after {
-    content:''; position:absolute; inset:-4px; border-radius:22px;
-    background:linear-gradient(135deg,var(--gradient-1),var(--gradient-2)); z-index:-1; opacity:0.3;
-  }
-  .founder-block { display:flex; flex-direction:column; align-items:center; text-align:center; margin-bottom:32px; }
-  .founder-block h3 { font-size:20px; font-weight:600; color:var(--white); margin-top:16px; }
-  .founder-block .f-title { font-size:14px; color:var(--accent); margin-top:4px; }
-  .founder-block .f-cred { font-size:13px; color:var(--text-dim); margin-top:2px; }
+/* Phone */
+.phone-wrap{animation:fu .7s .4s ease both}
+.phone{width:310px;background:#0F0F0F;border-radius:40px;padding:10px;box-shadow:0 40px 100px rgba(0,0,0,0.6),0 0 0 1px rgba(255,255,255,0.06);position:relative}
+.phone-notch{width:100px;height:24px;background:#0F0F0F;border-radius:0 0 14px 14px;position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:10}
+.phone-screen{background:#0B141A;border-radius:32px;overflow:hidden}
+.wh{background:#1F2C34;padding:8px 14px;display:flex;align-items:center;gap:10px}
+.wh-av{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--ac),var(--a2));display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:700}
+.wh-name{font-size:12px;color:#fff;font-weight:600}
+.wh-st{font-size:9px;color:#8696A0}
+.wc{padding:10px;display:flex;flex-direction:column;gap:5px;min-height:340px}
+.msg{max-width:82%;padding:7px 10px;border-radius:8px;font-size:10.5px;line-height:1.45;direction:rtl;text-align:right}
+.mb{background:#1F2C34;color:#E9EDEF;align-self:flex-start;border-top-left-radius:2px}
+.mu{background:#005C4B;color:#E9EDEF;align-self:flex-end;border-top-right-radius:2px}
+.mt2{font-size:8px;color:#8696A0;text-align:left;margin-top:1px;direction:ltr}
+.mm{background:#1F2C34;color:#E9EDEF;align-self:flex-start;border-top-left-radius:2px;padding:8px 10px}
+.mm .mmt{font-size:10px;font-weight:600;color:#25D366;margin-bottom:4px}
+.mm .mmi{font-size:10px;padding:3px 0;color:#E9EDEF;border-bottom:1px solid rgba(255,255,255,0.04)}
+.mm .mmi:last-child{border:0}
+.typing{display:flex;gap:3px;padding:6px 12px;background:#1F2C34;border-radius:8px;align-self:flex-start;width:50px}
+.typing span{width:5px;height:5px;background:#8696A0;border-radius:50%;animation:typ 1.4s ease-in-out infinite}
+.typing span:nth-child(2){animation-delay:.2s}
+.typing span:nth-child(3){animation-delay:.4s}
 
-  .about-text p { color: var(--text-muted); font-size: 16px; margin-bottom: 20px; line-height: 1.8; }
-  .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  .stat { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:24px; }
-  .stat-number { font-family:'Playfair Display',serif; font-size:32px; font-weight:700; color:var(--white); }
-  body.ar .stat-number { font-family:'Noto Kufi Arabic',serif; }
-  .stat-label { font-size:13px; color:var(--text-dim); margin-top:4px; }
+/* ═══════ SCROLL TICKER ═══════ */
+.ticker{padding:20px 0;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);overflow:hidden;position:relative}
+.ticker-track{display:flex;gap:48px;animation:scroll 30s linear infinite;width:max-content}
+.ticker-item{font-size:13px;font-weight:600;color:var(--td);white-space:nowrap;display:flex;align-items:center;gap:8px}
+.ticker-item .dot{width:4px;height:4px;border-radius:50%;background:var(--ac)}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-  .contact-section { border-top: 1px solid var(--border); }
-  .contact-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px; margin-top:40px; }
-  .contact-item { background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:32px; }
-  .contact-item h3 { font-size:13px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--text-dim); margin-bottom:12px; }
-  .contact-item p, .contact-item a { font-size:15px; color:var(--text); text-decoration:none; line-height:1.8; }
-  .contact-item a:hover { color:var(--accent); }
+/* ═══════ METRICS ═══════ */
+.metrics{padding:64px 0}
+.mg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.met{text-align:center;padding:32px 16px;border-radius:16px;background:var(--sf);border:1px solid var(--bd);position:relative;overflow:hidden;transition:all .4s}
+.met:hover{border-color:var(--ba);transform:translateY(-4px)}
+.met::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,var(--gw),transparent 70%);opacity:0;transition:opacity .4s}
+.met:hover::before{opacity:1}
+.met-n{font-size:36px;font-weight:900;color:var(--wh);letter-spacing:-2px;position:relative;z-index:1}
+.met-n .ac{color:var(--ac)}
+.met-l{font-size:11px;color:var(--tm);margin-top:4px;font-weight:500;position:relative;z-index:1}
 
-  footer { padding:40px 0; border-top:1px solid var(--border); text-align:center; }
-  footer p { font-size:13px; color:var(--text-dim); }
-  .legal-row { display:flex; justify-content:center; gap:24px; margin-top:8px; flex-wrap:wrap; }
-  .legal-row span { font-size:12px; color:var(--text-dim); }
+/* ═══════ HOW IT WORKS ═══════ */
+.how{padding:100px 0}
+.how-header{text-align:center;margin-bottom:64px}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
+.how-grid::before{content:'';position:absolute;top:60px;left:16%;right:16%;height:1px;background:linear-gradient(90deg,transparent,var(--ac),var(--a2),var(--a3),transparent);opacity:.3}
+.how-step{background:var(--sf);border:1px solid var(--bd);border-radius:20px;padding:32px 24px;text-align:center;transition:all .5s;position:relative;overflow:hidden}
+.how-step:hover{border-color:var(--ba);transform:translateY(-6px)}
+.how-num{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--ac),var(--a2));display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:#fff;margin:0 auto 16px;position:relative;z-index:1}
+.how-icon{font-size:32px;margin-bottom:12px}
+.how-step h3{font-size:15px;font-weight:700;color:var(--wh);margin-bottom:8px}
+.how-step p{font-size:12px;color:var(--tm);line-height:1.6}
 
-  [data-lang="ar"] { display: none; }
-  body.ar [data-lang="ar"] { display: unset; }
-  body.ar [data-lang="en"] { display: none; }
+/* ═══════ DASHBOARD ═══════ */
+.dash{padding:100px 0}
+.dash-g{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.dash-mock{background:#0A0F1A;border:1px solid var(--bd);border-radius:14px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,0.4)}
+.dash-tb{background:rgba(255,255,255,0.03);padding:8px 14px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--bd)}
+.dd{width:7px;height:7px;border-radius:50%}.dd.r{background:#FF5F57}.dd.y{background:#FFBD2E}.dd.g{background:#27C93F}
+.dash-bd{padding:16px}
+.dash-r{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}
+.dash-c{background:rgba(255,255,255,0.025);border:1px solid var(--bd);border-radius:8px;padding:12px}
+.dash-c .n{font-size:22px;font-weight:800;color:var(--wh)}.dash-c .l{font-size:9px;color:var(--tm);margin-top:2px}
+.dash-c.bl .n{color:var(--ac)}.dash-c.gr .n{color:var(--green)}.dash-c.pu .n{color:var(--a3)}
+.dtk{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:rgba(255,255,255,0.015);border:1px solid var(--bd);border-radius:6px;margin-bottom:5px;font-size:10px}
+.dtk .nm{color:var(--wh);font-weight:600}.dtk .ct{color:var(--ac);font-weight:500}
+.dtk .sts{padding:2px 6px;border-radius:3px;font-size:9px;font-weight:600}
+.sts-o{background:rgba(59,130,246,0.12);color:var(--ac)}.sts-d{background:rgba(16,185,129,0.12);color:var(--green)}
 
-  @media (max-width:768px) {
-    .nav-links { display:none; }
-    .about-grid { grid-template-columns:1fr; gap:40px; }
-    .contact-grid { grid-template-columns:1fr; }
-    .hero { min-height:auto; padding:140px 0 80px; }
-    .section { padding:80px 0; }
-  }
+/* ═══════ HEALTH EDUCATION ═══════ */
+.health{padding:100px 0;border-top:1px solid var(--bd)}
+.health-header{text-align:center;margin-bottom:64px}
+.health-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.health-card{background:var(--sf);border:1px solid var(--bd);border-radius:20px;overflow:hidden;transition:all .5s;position:relative}
+.health-card:hover{border-color:var(--ba);transform:translateY(-6px)}
+.health-img{height:160px;display:flex;align-items:center;justify-content:center;font-size:64px;position:relative;overflow:hidden}
+.health-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,var(--bg))}
+.health-card.obesity .health-img{background:linear-gradient(135deg,rgba(244,63,94,0.1),rgba(139,92,246,0.05))}
+.health-card.diabetes .health-img{background:linear-gradient(135deg,rgba(59,130,246,0.1),rgba(6,182,212,0.05))}
+.health-card.mounjaro .health-img{background:linear-gradient(135deg,rgba(16,185,129,0.1),rgba(245,158,11,0.05))}
+.health-body{padding:24px}
+.health-tag{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.health-card.obesity .health-tag{color:var(--rose)}
+.health-card.diabetes .health-tag{color:var(--ac)}
+.health-card.mounjaro .health-tag{color:var(--green)}
+.health-card h3{font-size:16px;font-weight:700;color:var(--wh);margin-bottom:8px;letter-spacing:-.3px}
+.health-card p{font-size:12px;color:var(--tm);line-height:1.6}
+.health-stats{display:flex;gap:16px;margin-top:16px;padding-top:16px;border-top:1px solid var(--bd)}
+.health-stat{text-align:center;flex:1}
+.health-stat .val{font-size:18px;font-weight:800;color:var(--wh)}
+.health-stat .lbl{font-size:9px;color:var(--tm);margin-top:2px}
+
+/* ═══════ SHEFA360 PROMO ═══════ */
+.shefa{padding:100px 0;position:relative;overflow:hidden}
+.shefa-box{background:linear-gradient(135deg,rgba(16,185,129,0.06),rgba(6,182,212,0.04),rgba(59,130,246,0.04));border:1px solid rgba(16,185,129,0.2);border-radius:28px;padding:80px 60px;position:relative;overflow:hidden}
+.shefa-box::before{content:'';position:absolute;top:-50%;right:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(16,185,129,0.04),transparent 50%);animation:spin 30s linear infinite}
+.shefa-inner{display:grid;grid-template-columns:1fr 300px;gap:60px;align-items:center;position:relative;z-index:1}
+.shefa-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);padding:5px 14px;border-radius:100px;font-size:10px;font-weight:700;color:var(--green);letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}
+.shefa-title{font-size:clamp(28px,3.5vw,44px);font-weight:900;color:var(--wh);letter-spacing:-1.5px;margin-bottom:16px;line-height:1.1}
+body.ar .shefa-title{font-family:'Noto Kufi Arabic',sans-serif;letter-spacing:0;line-height:1.3}
+.shefa-title .gr2{background:linear-gradient(135deg,var(--green),var(--a2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.shefa-desc{font-size:15px;color:var(--tm);margin-bottom:28px;line-height:1.7;max-width:480px}
+.shefa-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px}
+.shefa-feat{display:flex;gap:10px;align-items:center;padding:10px 14px;background:rgba(255,255,255,0.02);border:1px solid var(--bd);border-radius:10px;font-size:12px;color:var(--tx)}
+.shefa-feat .icon{font-size:18px}
+.shefa-app{width:260px;height:500px;background:#111;border-radius:36px;padding:10px;box-shadow:0 40px 80px rgba(0,0,0,0.5);animation:float 6s ease-in-out infinite}
+.shefa-screen{background:linear-gradient(180deg,rgba(16,185,129,0.15),var(--bg));border-radius:28px;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center}
+.shefa-logo{font-size:48px;margin-bottom:16px}
+.shefa-screen h3{font-size:24px;font-weight:800;color:var(--wh);margin-bottom:4px}
+.shefa-screen .sub{font-size:12px;color:var(--green);font-weight:600;margin-bottom:24px}
+.shefa-screen .tagline{font-size:11px;color:var(--tm);line-height:1.5}
+.shefa-screen .coming{margin-top:24px;padding:8px 20px;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);border-radius:100px;font-size:11px;font-weight:700;color:var(--green);letter-spacing:1px;text-transform:uppercase}
+
+/* ═══════ SERVICES ═══════ */
+.sec{padding:100px 0}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sc{background:var(--sf);border:1px solid var(--bd);border-radius:18px;padding:28px 22px;transition:all .5s;position:relative;overflow:hidden}
+.sc::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,var(--gw),transparent 70%);opacity:0;transition:opacity .5s}
+.sc:hover{border-color:var(--ba);transform:translateY(-6px)}.sc:hover::after{opacity:1}
+.sc *{position:relative;z-index:1}
+.si{font-size:28px;margin-bottom:14px;display:block}
+.sc h3{font-size:14px;font-weight:700;color:var(--wh);margin-bottom:6px}
+.sc p{font-size:12px;color:var(--tm);line-height:1.6}
+
+/* ═══════ ABOUT ═══════ */
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.at p{color:var(--tm);font-size:14px;margin-bottom:16px;line-height:1.85}
+.founder-card{display:flex;align-items:center;gap:18px;padding:18px;background:var(--sf);border:1px solid var(--bd);border-radius:16px;margin-bottom:20px}
+.founder-card img{width:72px;height:72px;border-radius:12px;object-fit:cover;object-position:top center;border:1px solid var(--bd)}
+.founder-card h3{font-size:15px;font-weight:700;color:var(--wh)}
+.founder-card .rl{font-size:11px;color:var(--ac);font-weight:500}
+.founder-card .cr{font-size:10px;color:var(--td)}
+.af{display:grid;gap:10px}
+.afi{display:flex;gap:12px;align-items:flex-start;padding:12px 16px;border-radius:12px;background:var(--sf);border:1px solid var(--bd);transition:border-color .3s}
+.afi:hover{border-color:var(--ba)}
+.afi .ic{font-size:18px;margin-top:2px}
+.afi h4{font-size:12px;font-weight:600;color:var(--wh);margin-bottom:1px}
+.afi p{font-size:10px;color:var(--tm)}
+
+/* ═══════ CTA ═══════ */
+.ctab{background:linear-gradient(135deg,rgba(59,130,246,0.06),rgba(6,182,212,0.04));border:1px solid var(--ba);border-radius:24px;padding:64px;text-align:center;position:relative;overflow:hidden;margin:100px 0}
+.ctab h2{font-size:clamp(26px,3vw,40px);font-weight:900;color:var(--wh);letter-spacing:-1.2px;margin-bottom:14px;position:relative;z-index:1}
+body.ar .ctab h2{font-family:'Noto Kufi Arabic',sans-serif;letter-spacing:0;line-height:1.4}
+.ctab p{font-size:15px;color:var(--tm);max-width:420px;margin:0 auto 28px;position:relative;z-index:1}
+
+/* Contact */
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.ci{background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:28px 22px;transition:all .3s}
+.ci:hover{border-color:var(--ba)}
+.ci h3{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--td);margin-bottom:10px}
+.ci p,.ci a{font-size:13px;color:var(--tx);text-decoration:none;line-height:1.8}
+.ci a:hover{color:var(--ac)}
+
+footer{padding:32px 0;border-top:1px solid var(--bd)}
+.fi{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+footer p{font-size:11px;color:var(--td)}
+.flg{display:flex;gap:16px}
+.flg span{font-size:10px;color:var(--td)}
+
+@media(max-width:960px){
+.hi{grid-template-columns:1fr;gap:32px;text-align:center}.hcta{justify-content:center}.phone-wrap{order:-1;display:flex;justify-content:center}.phone{width:270px}
+.sg,.how-grid,.health-grid{grid-template-columns:1fr}.mg{grid-template-columns:1fr 1fr}.ag,.dash-g{grid-template-columns:1fr;gap:40px}.cg{grid-template-columns:1fr}.nl{display:none}.sec,.how,.dash,.health,.shefa{padding:60px 0}.ctab{padding:40px 20px;margin:60px 0}.fi{flex-direction:column;text-align:center}
+.shefa-inner{grid-template-columns:1fr;text-align:center}.shefa-app{margin:0 auto}.shefa-features{grid-template-columns:1fr}.shefa-box{padding:40px 24px}.founder-card{flex-direction:column;text-align:center}
+}
 </style>
 </head>
 <body>
+<div class="bgfx"></div>
 
-<nav>
-  <div class="container">
-    <a href="#" class="logo">
-      <div class="logo-mark">TG</div>
-      <span class="logo-text"><span data-lang="en">Twix Digital Gateway</span><span data-lang="ar">تويكس ديجيتال جيتواي</span></span>
-    </a>
-    <div class="nav-right">
-      <ul class="nav-links">
-        <li><a href="#services"><span data-lang="en">Services</span><span data-lang="ar">خدماتنا</span></a></li>
-        <li><a href="#about"><span data-lang="en">About</span><span data-lang="ar">من نحن</span></a></li>
-        <li><a href="#contact"><span data-lang="en">Contact</span><span data-lang="ar">تواصل</span></a></li>
-      </ul>
-      <button class="lang-toggle" onclick="toggleLang()"><span data-lang="en">العربية</span><span data-lang="ar">English</span></button>
-    </div>
-  </div>
-</nav>
+<nav id="nav"><div class="c"><a href="#" class="logo"><div class="logo-mark">TG</div><span class="logo-text"><span data-lang="en">Twix Digital Gateway</span><span data-lang="ar">تويكس ديجيتال جيتواي</span></span></a><div class="nr"><ul class="nl"><li><a href="#demo"><span data-lang="en">Product</span><span data-lang="ar">المنتج</span></a></li><li><a href="#health"><span data-lang="en">Health</span><span data-lang="ar">صحة</span></a></li><li><a href="#shefa"><span data-lang="en">Shefa360</span><span data-lang="ar">شفاء360</span></a></li><li><a href="#about"><span data-lang="en">About</span><span data-lang="ar">من نحن</span></a></li><li><a href="#contact"><span data-lang="en">Contact</span><span data-lang="ar">تواصل</span></a></li></ul><button class="lt" onclick="toggleLang()">العربية</button></div></div></nav>
 
-<section class="hero">
-  <div class="hero-glow"></div>
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-tag">
-        <span class="dot"></span>
-        <span data-lang="en">Healthcare Technology &amp; Digital Solutions</span>
-        <span data-lang="ar">تقنية الرعاية الصحية والحلول الرقمية</span>
-      </div>
-      <h1>
-        <span data-lang="en">Intelligent systems for <span class="gradient">modern healthcare</span></span>
-        <span data-lang="ar">أنظمة ذكية <span class="gradient">للرعاية الصحية</span> الحديثة</span>
-      </h1>
-      <p class="hero-desc">
-        <span data-lang="en">We build patient communication platforms, clinical workflow tools, and digital health infrastructure that help healthcare providers deliver better care at scale.</span>
-        <span data-lang="ar">نبني منصات تواصل مع المرضى وأدوات سير العمل السريري والبنية التحتية الصحية الرقمية التي تساعد مقدمي الرعاية الصحية على تقديم رعاية أفضل على نطاق واسع.</span>
-      </p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary"><span data-lang="en">Get in Touch</span><span data-lang="ar">تواصل معنا</span></a>
-        <a href="#services" class="btn btn-ghost"><span data-lang="en">Our Solutions</span><span data-lang="ar">حلولنا</span></a>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- ═══ HERO ═══ -->
+<section class="hero"><div class="hero-orb hero-orb-1"></div><div class="hero-orb hero-orb-2"></div><div class="c"><div class="hi"><div>
+<div class="hb"><span class="pulse"></span><span data-lang="en">Now Live — WhatsApp Clinic Bot</span><span data-lang="ar">متاح الآن — بوت العيادة على الواتساب</span></div>
+<h1><span data-lang="en">Your clinic on <span class="gr">WhatsApp</span>.<br>Always on. <span class="gr2">Zero effort</span>.</span><span data-lang="ar">عيادتك على <span class="gr">الواتساب</span>.<br>شغّالة دائماً. <span class="gr2">بدون جهد</span>.</span></h1>
+<p class="hd"><span data-lang="en">Patients request refills, lab results, sick leave, and consultations via WhatsApp. You get a daily digest. No app. No training. Works in Arabic & English.</span><span data-lang="ar">المرضى يطلبون الأدوية والتحاليل والإجازات والاستشارات عبر الواتساب. تصلك خلاصة يومية. بدون تطبيق. بدون تدريب. يعمل بالعربية والإنجليزية.</span></p>
+<div class="hcta"><a href="#contact" class="btn bp"><span data-lang="en">🚀 Start Free Trial</span><span data-lang="ar">🚀 ابدأ التجربة المجانية</span></a><a href="#demo" class="btn bgh"><span data-lang="en">See How It Works ↓</span><span data-lang="ar">شوف كيف يشتغل ↓</span></a></div>
+</div>
+<div class="phone-wrap"><div class="phone"><div class="phone-notch"></div><div class="phone-screen"><div class="wh"><div class="wh-av">👨‍⚕️</div><div><div class="wh-name">عيادة د. عادل</div><div class="wh-st">online</div></div></div><div class="wc">
+<div class="msg mb">مرحباً بك في خدمة عيادة الدكتور عادل 👋<br>اختر اللغة:<br>🇸🇦 العربية | 🇬🇧 English<div class="mt2">10:01 AM</div></div>
+<div class="msg mu">🇸🇦 العربية<div class="mt2">10:01 AM ✓✓</div></div>
+<div class="msg mb">أهلاً محمد 👋<br>لديك 3 طلبات متبقية اليوم<div class="mt2">10:01 AM</div></div>
+<div class="msg mm"><div class="mmt">📋 اختر الخدمة:</div><div class="mmi">🔬 نتائج التحاليل والأشعة</div><div class="mmi">💊 صرف أدوية ناقصة</div><div class="mmi">📊 متابعة السكر</div><div class="mmi">🏥 إجازة مرضية</div><div class="mmi">📞 استشارة هاتفية</div><div class="mmi">💬 استفسار عام</div></div>
+<div class="msg mu">💊 صرف أدوية ناقصة<div class="mt2">10:02 AM ✓✓</div></div>
+<div class="msg mb">📝 اكتب اسم الدواء أو صوّر الوصفة<div class="mt2">10:02 AM</div></div>
+<div class="typing"><span></span><span></span><span></span></div>
+</div></div></div></div>
+</div></div></section>
 
-<section class="section" id="services">
-  <div class="container">
-    <div class="section-label"><span data-lang="en">What We Build</span><span data-lang="ar">ماذا نبني</span></div>
-    <h2 class="section-title"><span data-lang="en">Technology that bridges the gap between clinics and patients</span><span data-lang="ar">تقنية تربط بين العيادات والمرضى</span></h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">💬</div>
-        <h3><span data-lang="en">Patient Triage Systems</span><span data-lang="ar">أنظمة فرز المرضى</span></h3>
-        <p><span data-lang="en">Automated WhatsApp-based triage bots that handle patient requests — medication refills, lab results, sick leave, consultations — 24/7 in Arabic and English.</span><span data-lang="ar">بوتات واتساب آلية تتعامل مع طلبات المرضى — صرف الأدوية، نتائج التحاليل، الإجازات المرضية، الاستشارات — على مدار الساعة باللغتين.</span></p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🏥</div>
-        <h3><span data-lang="en">Clinical Workflow Tools</span><span data-lang="ar">أدوات سير العمل السريري</span></h3>
-        <p><span data-lang="en">Desktop tools that integrate with hospital information systems to streamline appointment management, patient follow-ups, and clinical documentation.</span><span data-lang="ar">أدوات تتكامل مع أنظمة المستشفيات لتبسيط إدارة المواعيد ومتابعة المرضى والتوثيق السريري.</span></p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">📊</div>
-        <h3><span data-lang="en">Digital Health Platforms</span><span data-lang="ar">منصات الصحة الرقمية</span></h3>
-        <p><span data-lang="en">End-to-end patient management platforms combining body composition tracking, chronic disease monitoring, and AI-driven automated follow-up protocols.</span><span data-lang="ar">منصات إدارة متكاملة تجمع بين قياسات تركيب الجسم ومتابعة الأمراض المزمنة وبروتوكولات المتابعة الآلية بالذكاء الاصطناعي.</span></p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🔗</div>
-        <h3><span data-lang="en">Healthcare API Integration</span><span data-lang="ar">تكامل واجهات البرمجة الصحية</span></h3>
-        <p><span data-lang="en">Custom integrations connecting existing hospital systems with modern communication channels — WhatsApp, SMS, and web portals for patient engagement.</span><span data-lang="ar">تكاملات مخصصة تربط أنظمة المستشفيات بقنوات التواصل الحديثة — واتساب، رسائل نصية، وبوابات إلكترونية.</span></p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🛡️</div>
-        <h3><span data-lang="en">Web3 Software Development</span><span data-lang="ar">تطوير برمجيات الويب 3</span></h3>
-        <p><span data-lang="en">Decentralized application development, smart contract engineering, and blockchain-based solutions for digital asset management and verification systems.</span><span data-lang="ar">تطوير التطبيقات اللامركزية وهندسة العقود الذكية وحلول البلوكتشين لإدارة الأصول الرقمية وأنظمة التحقق.</span></p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">⚙️</div>
-        <h3><span data-lang="en">Custom Software Solutions</span><span data-lang="ar">حلول برمجية مخصصة</span></h3>
-        <p><span data-lang="en">Bespoke software development for businesses across the GCC — from internal automation tools to customer-facing applications built for scale.</span><span data-lang="ar">تطوير برمجيات مخصصة للشركات في دول الخليج — من أدوات الأتمتة الداخلية إلى التطبيقات الموجهة للعملاء.</span></p>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- ═══ TICKER ═══ -->
+<div class="ticker"><div class="ticker-track"><span class="ticker-item"><span class="dot"></span>Ministry of Health</span><span class="ticker-item"><span class="dot"></span>Al Habib Medical Group</span><span class="ticker-item"><span class="dot"></span>Al Hammadi Hospital</span><span class="ticker-item"><span class="dot"></span>Royal Clinics</span><span class="ticker-item"><span class="dot"></span>Innovation City RAK</span><span class="ticker-item"><span class="dot"></span>SCFHS Certified</span><span class="ticker-item"><span class="dot"></span>15+ Years Experience</span><span class="ticker-item"><span class="dot"></span>4,000+ Five-Star Ratings</span><span class="ticker-item"><span class="dot"></span>Ministry of Health</span><span class="ticker-item"><span class="dot"></span>Al Habib Medical Group</span><span class="ticker-item"><span class="dot"></span>Al Hammadi Hospital</span><span class="ticker-item"><span class="dot"></span>Royal Clinics</span><span class="ticker-item"><span class="dot"></span>Innovation City RAK</span><span class="ticker-item"><span class="dot"></span>SCFHS Certified</span><span class="ticker-item"><span class="dot"></span>15+ Years Experience</span><span class="ticker-item"><span class="dot"></span>4,000+ Five-Star Ratings</span></div></div>
 
-<section class="section" id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div>
-        <div class="section-label"><span data-lang="en">About Us</span><span data-lang="ar">من نحن</span></div>
-        <h2 class="section-title"><span data-lang="en">Built by a doctor, for healthcare</span><span data-lang="ar">بُنيت على يد طبيب، من أجل الرعاية الصحية</span></h2>
-        <div class="about-text">
-          <p><span data-lang="en">Twix Digital Gateway Ltd is a technology company registered in Ras Al Khaimah, UAE, under Innovation City Authority. We specialize in building healthcare communication systems and digital tools that solve real problems in clinical practice.</span><span data-lang="ar">تويكس ديجيتال جيتواي المحدودة هي شركة تقنية مسجلة في رأس الخيمة، الإمارات العربية المتحدة، تحت هيئة مدينة الابتكار. نتخصص في بناء أنظمة التواصل الصحي والأدوات الرقمية التي تحل مشاكل حقيقية في الممارسة السريرية.</span></p>
-          <p><span data-lang="en">Founded by Dr. Adel Almalki, a practicing Family Medicine, Diabetes and Obesity Consultant with over 15 years of clinical experience, our solutions are designed from firsthand experience with the daily challenges of patient care in primary healthcare centers across Saudi Arabia and the UAE.</span><span data-lang="ar">أسسها الدكتور عادل المالكي، استشاري طب الأسرة والسكري والسمنة بخبرة تزيد عن 15 عاماً في الممارسة السريرية، وحلولنا مصممة من خبرة مباشرة مع التحديات اليومية لرعاية المرضى في مراكز الرعاية الصحية الأولية في السعودية والإمارات.</span></p>
-        </div>
-      </div>
-      <div>
-        <div class="founder-block">
-          <div class="founder-photo-wrap">
-            <img src="founder.jpg" alt="Dr. Adel Almalki" class="founder-photo">
-          </div>
-          <h3><span data-lang="en">Dr. Adel Almalki</span><span data-lang="ar">د. عادل المالكي</span></h3>
-          <p class="f-title"><span data-lang="en">Founder &amp; Managing Director</span><span data-lang="ar">المؤسس والمدير التنفيذي</span></p>
-          <p class="f-cred"><span data-lang="en">Family Medicine, Diabetes &amp; Obesity Consultant</span><span data-lang="ar">استشاري طب الأسرة والسكري والسمنة</span></p>
-        </div>
-        <div class="about-stats">
-          <div class="stat">
-            <div class="stat-number"><span data-lang="en">UAE</span><span data-lang="ar">الإمارات</span></div>
-            <div class="stat-label"><span data-lang="en">Registered Company<br>RAK Innovation City</span><span data-lang="ar">شركة مسجلة<br>مدينة الابتكار - رأس الخيمة</span></div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">5K+</div>
-            <div class="stat-label"><span data-lang="en">Patients Served<br>Across Two Clinics</span><span data-lang="ar">مريض تمت خدمتهم<br>في عيادتين</span></div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">7</div>
-            <div class="stat-label"><span data-lang="en">Service Categories<br>In Triage System</span><span data-lang="ar">فئات خدمة<br>في نظام الفرز</span></div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">AR/EN</div>
-            <div class="stat-label"><span data-lang="en">Bilingual Systems<br>Arabic &amp; English</span><span data-lang="ar">أنظمة ثنائية اللغة<br>العربية والإنجليزية</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- ═══ METRICS ═══ -->
+<div class="metrics c rv"><div class="mg"><div class="met"><div class="met-n">15<span class="ac">+</span></div><div class="met-l"><span data-lang="en">Years Experience</span><span data-lang="ar">سنة خبرة</span></div></div><div class="met"><div class="met-n">5<span class="ac">K+</span></div><div class="met-l"><span data-lang="en">Patients Served</span><span data-lang="ar">مريض</span></div></div><div class="met"><div class="met-n">4<span class="ac">K+</span></div><div class="met-l"><span data-lang="en">5-Star Ratings</span><span data-lang="ar">تقييم 5 نجوم</span></div></div><div class="met"><div class="met-n">24<span class="ac">/7</span></div><div class="met-l"><span data-lang="en">Bot Active</span><span data-lang="ar">البوت شغّال</span></div></div></div></div>
 
-<section class="section contact-section" id="contact">
-  <div class="container">
-    <div class="section-label"><span data-lang="en">Contact</span><span data-lang="ar">تواصل معنا</span></div>
-    <h2 class="section-title"><span data-lang="en">Let's build something together</span><span data-lang="ar">لنبني شيئاً معاً</span></h2>
-    <div class="contact-grid">
-      <div class="contact-item">
-        <h3><span data-lang="en">Email</span><span data-lang="ar">البريد الإلكتروني</span></h3>
-        <a href="/cdn-cgi/l/email-protection#bfdbcd91dedbd28e86878bffd8d2ded6d391dcd0d2"><span class="__cf_email__" data-cfemail="593d2b77383d346860616d193e34383035773a3634">[email&#160;protected]</span></a>
-      </div>
-      <div class="contact-item">
-        <h3><span data-lang="en">Office Address</span><span data-lang="ar">عنوان المكتب</span></h3>
-        <p><span data-lang="en">Office A, Innovation City Business Centre<br>RAK BANK ROC Office, Ground Floor<br>Al Rifaa, Sheikh Mohammed Bin Zayed Road<br>Ras Al Khaimah, UAE</span><span data-lang="ar">مكتب A، مركز أعمال مدينة الابتكار<br>بناية راك بنك، الدور الأرضي<br>الرفاعة، شارع الشيخ محمد بن زايد<br>رأس الخيمة، الإمارات</span></p>
-      </div>
-      <div class="contact-item">
-        <h3><span data-lang="en">Company Details</span><span data-lang="ar">بيانات الشركة</span></h3>
-        <p><span data-lang="en">Twix Digital Gateway Ltd<br>Registration No: 01011198<br>License No: 07011120<br>Innovation City Authority, RAK</span><span data-lang="ar">تويكس ديجيتال جيتواي المحدودة<br>رقم التسجيل: 01011198<br>رقم الرخصة: 07011120<br>هيئة مدينة الابتكار، رأس الخيمة</span></p>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- ═══ HOW IT WORKS ═══ -->
+<section class="how" id="demo"><div class="c"><div class="how-header rv"><div class="sl" style="justify-content:center"><span data-lang="en">How It Works</span><span data-lang="ar">كيف يشتغل</span></div><h2 class="st" style="text-align:center;margin:0 auto"><span data-lang="en">From patient message to doctor's digest</span><span data-lang="ar">من رسالة المريض إلى ملخص الطبيب</span></h2></div>
+<div class="how-grid">
+<div class="how-step rv"><div class="how-icon">📱</div><div class="how-num">1</div><h3><span data-lang="en">Patient Sends WhatsApp</span><span data-lang="ar">المريض يرسل واتساب</span></h3><p><span data-lang="en">Patient texts your number. Bot greets, verifies identity, shows service menu. Works in Arabic & English.</span><span data-lang="ar">المريض يراسل رقمك. البوت يرحب ويتحقق من هويته ويعرض قائمة الخدمات. يعمل بالعربية والإنجليزية.</span></p></div>
+<div class="how-step rv"><div class="how-icon">🤖</div><div class="how-num">2</div><h3><span data-lang="en">Bot Handles Everything</span><span data-lang="ar">البوت يتعامل مع كل شي</span></h3><p><span data-lang="en">Collects medications, photos, readings. Generates a unique ticket number. Supports photo uploads.</span><span data-lang="ar">يجمع الأدوية والصور والقراءات. يصدر تذكرة برقم فريد. يدعم رفع الصور.</span></p></div>
+<div class="how-step rv"><div class="how-icon">📋</div><div class="how-num">3</div><h3><span data-lang="en">You Get a Daily Digest</span><span data-lang="ar">تصلك خلاصة يومية</span></h3><p><span data-lang="en">10 PM daily WhatsApp summary — all requests, patient details, ticket numbers, photos attached.</span><span data-lang="ar">الساعة 10 مساءً ملخص واتساب — كل الطلبات وبيانات المرضى والتذاكر والصور المرفقة.</span></p></div>
+</div></div></section>
 
-<footer>
-  <div class="container">
-    <p><span data-lang="en">&copy; 2026 Twix Digital Gateway Ltd. All rights reserved.</span><span data-lang="ar">&copy; 2026 تويكس ديجيتال جيتواي المحدودة. جميع الحقوق محفوظة.</span></p>
-    <div class="legal-row">
-      <span><span data-lang="en">Company Limited by Shares</span><span data-lang="ar">شركة محدودة بالأسهم</span></span>
-      <span>•</span>
-      <span><span data-lang="en">Innovation City, Government of Ras Al Khaimah</span><span data-lang="ar">مدينة الابتكار، حكومة رأس الخيمة</span></span>
-      <span>•</span>
-      <span><span data-lang="en">United Arab Emirates</span><span data-lang="ar">الإمارات العربية المتحدة</span></span>
-    </div>
-  </div>
-</footer>
+<!-- ═══ DASHBOARD ═══ -->
+<section class="dash"><div class="c"><div class="dash-g">
+<div class="rv"><div class="sl"><span data-lang="en">Admin Dashboard</span><span data-lang="ar">لوحة التحكم</span></div><h2 class="st"><span data-lang="en">Every patient request. One screen.</span><span data-lang="ar">كل طلبات المرضى. شاشة واحدة.</span></h2><p style="font-size:15px;color:var(--tm);margin-top:16px;line-height:1.7;max-width:420px"><span data-lang="en">Real-time tickets, patient history, category filters, one-click status updates. Built for busy clinics.</span><span data-lang="ar">تذاكر لحظية، سجل مرضى، تصفية بالفئة، تحديث الحالة بضغطة. مصمم للعيادات المشغولة.</span></p></div>
+<div class="rv"><div class="dash-mock"><div class="dash-tb"><div class="dd r"></div><div class="dd y"></div><div class="dd g"></div><span style="font-size:10px;color:var(--tm);margin-left:10px">ClinicBot Dashboard</span></div><div class="dash-bd">
+<div class="dash-r"><div class="dash-c bl"><div class="n">47</div><div class="l"><span data-lang="en">Today</span><span data-lang="ar">اليوم</span></div></div><div class="dash-c gr"><div class="n">38</div><div class="l"><span data-lang="en">Done</span><span data-lang="ar">مكتمل</span></div></div><div class="dash-c pu"><div class="n">9</div><div class="l"><span data-lang="en">Pending</span><span data-lang="ar">معلق</span></div></div></div>
+<div class="dtk"><span class="nm">محمد العتيبي</span><span class="ct">💊</span><span class="sts sts-d"><span data-lang="en">Done</span><span data-lang="ar">تم</span></span></div>
+<div class="dtk"><span class="nm">سارة القحطاني</span><span class="ct">🔬</span><span class="sts sts-o"><span data-lang="en">Open</span><span data-lang="ar">مفتوح</span></span></div>
+<div class="dtk"><span class="nm">عبدالله الشهري</span><span class="ct">📊</span><span class="sts sts-d"><span data-lang="en">Done</span><span data-lang="ar">تم</span></span></div>
+<div class="dtk"><span class="nm">نورة المالكي</span><span class="ct">🏥</span><span class="sts sts-o"><span data-lang="en">Open</span><span data-lang="ar">مفتوح</span></span></div>
+</div></div></div>
+</div></div></section>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-function toggleLang(){
-  const b=document.body;
+<!-- ═══ HEALTH EDUCATION ═══ -->
+<section class="health" id="health"><div class="c">
+<div class="health-header rv"><div class="sl" style="justify-content:center"><span data-lang="en">Health Insights</span><span data-lang="ar">نصائح صحية</span></div><h2 class="st" style="text-align:center;margin:0 auto"><span data-lang="en">Expert care for obesity, diabetes & metabolic health</span><span data-lang="ar">رعاية متخصصة للسمنة والسكري والصحة الأيضية</span></h2></div>
+<div class="health-grid">
+<div class="health-card obesity rv"><div class="health-img">🏋️</div><div class="health-body"><div class="health-tag"><span data-lang="en">Obesity Management</span><span data-lang="ar">علاج السمنة</span></div><h3><span data-lang="en">Comprehensive Weight Loss Programs</span><span data-lang="ar">برامج شاملة لإنقاص الوزن</span></h3><p><span data-lang="en">Personalized plans combining diet, exercise, behavioral therapy, and when indicated, GLP-1 receptor agonist medications like Mounjaro (Tirzepatide).</span><span data-lang="ar">خطط مخصصة تجمع بين الحمية والتمارين والعلاج السلوكي، وعند الحاجة، أدوية مثل مونجارو (تيرزيباتيد).</span></p><div class="health-stats"><div class="health-stat"><div class="val">23<span style="font-size:12px;color:var(--rose)">%</span></div><div class="lbl"><span data-lang="en">Avg. Weight Loss</span><span data-lang="ar">متوسط فقدان الوزن</span></div></div><div class="health-stat"><div class="val">1K<span style="font-size:12px;color:var(--rose)">+</span></div><div class="lbl"><span data-lang="en">Patients Treated</span><span data-lang="ar">مريض تم علاجه</span></div></div></div></div></div>
+
+<div class="health-card diabetes rv"><div class="health-img">💉</div><div class="health-body"><div class="health-tag"><span data-lang="en">Diabetes Care</span><span data-lang="ar">رعاية السكري</span></div><h3><span data-lang="en">Type 2 Diabetes Management & Prevention</span><span data-lang="ar">إدارة ومنع السكري من النوع الثاني</span></h3><p><span data-lang="en">SCFHS Fellowship-trained diabetes management. HbA1c optimization, insulin management, CGM-guided protocols, and metabolic syndrome reversal.</span><span data-lang="ar">إدارة السكري بزمالة الهيئة السعودية. تحسين HbA1c، إدارة الأنسولين، بروتوكولات CGM، وعكس متلازمة الأيض.</span></p><div class="health-stats"><div class="health-stat"><div class="val">3K<span style="font-size:12px;color:var(--ac)">+</span></div><div class="lbl"><span data-lang="en">Diabetes Patients</span><span data-lang="ar">مريض سكري</span></div></div><div class="health-stat"><div class="val">⭐</div><div class="lbl"><span data-lang="en">Fellowship Trained</span><span data-lang="ar">حاصل على زمالة</span></div></div></div></div></div>
+
+<div class="health-card mounjaro rv"><div class="health-img">💊</div><div class="health-body"><div class="health-tag"><span data-lang="en">Mounjaro & GLP-1 Therapy</span><span data-lang="ar">مونجارو وعلاج GLP-1</span></div><h3><span data-lang="en">Next-Generation Weight & Diabetes Treatment</span><span data-lang="ar">الجيل القادم من علاج الوزن والسكري</span></h3><p><span data-lang="en">Tirzepatide (Mounjaro) and Semaglutide (Ozempic) prescribing, monitoring, and dose optimization. Evidence-based protocols for maximum results.</span><span data-lang="ar">وصف ومتابعة تيرزيباتيد (مونجارو) وسيماغلوتيد (أوزمبيك). بروتوكولات مبنية على الأدلة لأقصى النتائج.</span></p><div class="health-stats"><div class="health-stat"><div class="val">15<span style="font-size:12px;color:var(--green)">%+</span></div><div class="lbl"><span data-lang="en">Body Weight Loss</span><span data-lang="ar">فقدان وزن الجسم</span></div></div><div class="health-stat"><div class="val">✓</div><div class="lbl"><span data-lang="en">Saudi FDA Approved</span><span data-lang="ar">معتمد من هيئة الغذاء والدواء</span></div></div></div></div></div>
+</div></div></section>
+
+<!-- ═══ SHEFA360 ═══ -->
+<section class="shefa" id="shefa"><div class="c"><div class="shefa-box"><div class="shefa-inner">
+<div class="rv">
+<div class="shefa-badge">🔥 <span data-lang="en">Coming Soon</span><span data-lang="ar">قريباً</span></div>
+<div class="shefa-title"><span data-lang="en">Introducing <span class="gr2">Shefa360</span></span><span data-lang="ar">تعرّف على <span class="gr2">شفاء360</span></span></div>
+<p class="shefa-desc"><span data-lang="en">Your doctor in your pocket. 24/7 access to your physician without appointments. Paid plans for premium care, free tier for those in need. Chronic disease management, body composition tracking, and AI-powered follow-up — all in one app.</span><span data-lang="ar">طبيبك في جيبك. وصول للطبيب 24/7 بدون مواعيد. خطط مدفوعة للرعاية المتميزة ومجانية للمحتاجين. إدارة الأمراض المزمنة وتتبع تركيب الجسم ومتابعة بالذكاء الاصطناعي — كلها في تطبيق واحد.</span></p>
+<div class="shefa-features">
+<div class="shefa-feat"><span class="icon">📱</span><span data-lang="en">Chat with your doctor anytime</span><span data-lang="ar">تواصل مع طبيبك في أي وقت</span></div>
+<div class="shefa-feat"><span class="icon">📊</span><span data-lang="en">InBody composition tracking</span><span data-lang="ar">تتبع قياسات InBody</span></div>
+<div class="shefa-feat"><span class="icon">💊</span><span data-lang="en">Smart medication reminders</span><span data-lang="ar">تذكير ذكي بالأدوية</span></div>
+<div class="shefa-feat"><span class="icon">🤖</span><span data-lang="en">AI-powered health insights</span><span data-lang="ar">تحليلات صحية بالذكاء الاصطناعي</span></div>
+<div class="shefa-feat"><span class="icon">🩺</span><span data-lang="en">Chronic disease management</span><span data-lang="ar">إدارة الأمراض المزمنة</span></div>
+<div class="shefa-feat"><span class="icon">❤️</span><span data-lang="en">Free tier for those in need</span><span data-lang="ar">مجاني للمحتاجين</span></div>
+</div>
+<a href="#contact" class="btn bgreen"><span data-lang="en">🔔 Get Early Access</span><span data-lang="ar">🔔 سجّل للوصول المبكر</span></a>
+</div>
+<div class="rv"><div class="shefa-app"><div class="shefa-screen"><div class="shefa-logo">🌙</div><h3>Shefa360</h3><div class="sub">شفاء ٣٦٠</div><div class="tagline"><span data-lang="en">Your health journey.<br>Guided by your doctor.<br>Powered by AI.</span><span data-lang="ar">رحلتك الصحية.<br>بإرشاد طبيبك.<br>بقوة الذكاء الاصطناعي.</span></div><div class="coming"><span data-lang="en">Coming 2026</span><span data-lang="ar">قريباً 2026</span></div></div></div></div>
+</div></div></div></section>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="sec" id="services"><div class="c"><div class="rv" style="margin-bottom:48px"><div class="sl"><span data-lang="en">Full Service Suite</span><span data-lang="ar">خدمات كاملة</span></div><h2 class="st"><span data-lang="en">Beyond triage — a complete digital health stack</span><span data-lang="ar">أكثر من فرز — حزمة صحة رقمية متكاملة</span></h2></div>
+<div class="sg">
+<div class="sc rv"><div class="si">💬</div><h3><span data-lang="en">Patient Triage Bots</span><span data-lang="ar">بوتات فرز المرضى</span></h3><p><span data-lang="en">7 categories, bilingual, photo uploads, ticket tracking, daily digest.</span><span data-lang="ar">7 فئات، ثنائي اللغة، رفع صور، تتبع تذاكر، ملخص يومي.</span></p></div>
+<div class="sc rv"><div class="si">🏥</div><h3><span data-lang="en">Clinical Workflow</span><span data-lang="ar">سير العمل السريري</span></h3><p><span data-lang="en">VIDA & Raqeem integration. Appointments, follow-ups, documentation.</span><span data-lang="ar">تكامل مع فيدا ورقيم. مواعيد ومتابعة وتوثيق.</span></p></div>
+<div class="sc rv"><div class="si">📊</div><h3><span data-lang="en">Health Platforms</span><span data-lang="ar">منصات صحية</span></h3><p><span data-lang="en">InBody, chronic disease protocols, AI follow-up. Subscription model.</span><span data-lang="ar">InBody، بروتوكولات مزمنة، متابعة ذكاء اصطناعي.</span></p></div>
+<div class="sc rv"><div class="si">🔗</div><h3><span data-lang="en">API Integration</span><span data-lang="ar">تكامل API</span></h3><p><span data-lang="en">Connect hospitals to WhatsApp, SMS, web portals.</span><span data-lang="ar">اربط المستشفيات بالواتساب والرسائل النصية.</span></p></div>
+<div class="sc rv"><div class="si">🛡️</div><h3><span data-lang="en">Web3 Solutions</span><span data-lang="ar">حلول الويب 3</span></h3><p><span data-lang="en">Smart contracts, DApps, blockchain verification.</span><span data-lang="ar">عقود ذكية، تطبيقات لامركزية، تحقق بلوكتشين.</span></p></div>
+<div class="sc rv"><div class="si">⚙️</div><h3><span data-lang="en">Custom Software</span><span data-lang="ar">برمجيات مخصصة</span></h3><p><span data-lang="en">Bespoke GCC development. Automation to customer apps.</span><span data-lang="ar">تطوير مخصص للخليج. أتمتة وتطبيقات عملاء.</span></p></div>
+</div></div></section>
+
+<!-- ═══ ABOUT ═══ -->
+<section class="sec" id="about"><div class="c"><div class="ag"><div class="rv"><div class="sl"><span data-lang="en">About</span><span data-lang="ar">من نحن</span></div><h2 class="st"><span data-lang="en">Built by a doctor who codes</span><span data-lang="ar">بناها طبيب يبرمج</span></h2>
+<div class="founder-card"><img src="founder.jpg" alt="Dr. Adel Almalki"><div><h3><span data-lang="en">Dr. Adel Almalki</span><span data-lang="ar">د. عادل المالكي</span></h3><p class="rl"><span data-lang="en">Founder · FM, Diabetes & Obesity Consultant</span><span data-lang="ar">المؤسس · استشاري أسرة وسكري وسمنة</span></p><p class="cr">MBBS · Saudi Board · Arab Board · Diabetes Fellowship</p></div></div>
+<div class="at"><p><span data-lang="en">Every product comes from 15 years treating patients across MOH, Royal Clinics, Al Habib, and Al Hammadi. We don't guess what clinics need. We know — because we practice medicine every day.</span><span data-lang="ar">كل منتج ينبع من 15 سنة في علاج المرضى في وزارة الصحة والعيادات الملكية والحبيب والحمادي. لا نخمن احتياجات العيادات — نحن نمارس الطب يومياً.</span></p></div></div>
+<div class="rv"><div class="af">
+<div class="afi"><div class="ic">🏛️</div><div><h4><span data-lang="en">UAE Company</span><span data-lang="ar">شركة إماراتية</span></h4><p><span data-lang="en">Innovation City, RAK · Reg: 01011198</span><span data-lang="ar">مدينة الابتكار · رقم: 01011198</span></p></div></div>
+<div class="afi"><div class="ic">🩺</div><div><h4><span data-lang="en">SCFHS Consultant</span><span data-lang="ar">استشاري الهيئة</span></h4><p><span data-lang="en">10RM0344603 · Active Status</span><span data-lang="ar">10RM0344603 · فعال</span></p></div></div>
+<div class="afi"><div class="ic">⭐</div><div><h4><span data-lang="en">4,000+ Ratings</span><span data-lang="ar">+4,000 تقييم</span></h4><p><span data-lang="en">SEHA (1K+) + Al Habib (3K+)</span><span data-lang="ar">صحة (+1K) + الحبيب (+3K)</span></p></div></div>
+<div class="afi"><div class="ic">🤖</div><div><h4><span data-lang="en">AI-First Dev</span><span data-lang="ar">تطوير بالذكاء الاصطناعي</span></h4><p><span data-lang="en">Claude Code · Ship in days</span><span data-lang="ar">Claude Code · ننشر في أيام</span></p></div></div>
+</div></div></div></div></section>
+
+<!-- ═══ CTA ═══ -->
+<div class="c rv"><div class="ctab"><h2><span data-lang="en">Want this for your clinic?</span><span data-lang="ar">تبي هذا لعيادتك؟</span></h2><p><span data-lang="en">Free 30-day trial. No setup fees. Your clinic on WhatsApp in 48 hours.</span><span data-lang="ar">تجربة 30 يوم مجاناً. بدون رسوم. عيادتك على الواتساب خلال 48 ساعة.</span></p><a href="#contact" class="btn bp"><span data-lang="en">🚀 Start Free Trial</span><span data-lang="ar">🚀 ابدأ التجربة المجانية</span></a></div></div>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="sec" id="contact"><div class="c"><div class="rv" style="margin-bottom:40px"><div class="sl"><span data-lang="en">Contact</span><span data-lang="ar">تواصل</span></div><h2 class="st"><span data-lang="en">Let's build something together</span><span data-lang="ar">لنبنِ شيئاً معاً</span></h2></div>
+<div class="cg">
+<div class="ci rv"><h3><span data-lang="en">Email</span><span data-lang="ar">البريد</span></h3><a href="mailto:dr.adm1984@gmail.com">dr.adm1984@gmail.com</a></div>
+<div class="ci rv"><h3><span data-lang="en">Office</span><span data-lang="ar">المكتب</span></h3><p><span data-lang="en">Office A, Innovation City<br>Al Rifaa, Sh. MBZ Road<br>Ras Al Khaimah, UAE</span><span data-lang="ar">مكتب A، مدينة الابتكار<br>الرفاعة، شارع محمد بن زايد<br>رأس الخيمة، الإمارات</span></p></div>
+<div class="ci rv"><h3><span data-lang="en">Company</span><span data-lang="ar">الشركة</span></h3><p>Twix Digital Gateway Ltd<br>Reg: 01011198 · Lic: 07011120<br><span data-lang="en">Innovation City, RAK</span><span data-lang="ar">مدينة الابتكار، رأس الخيمة</span></p></div>
+</div></div></section>
+
+<footer><div class="c"><div class="fi"><p>© 2026 Twix Digital Gateway Ltd</p><div class="flg"><span><span data-lang="en">Company Limited by Shares</span><span data-lang="ar">شركة محدودة بالأسهم</span></span><span><span data-lang="en">Innovation City · RAK · UAE</span><span data-lang="ar">مدينة الابتكار · رأس الخيمة</span></span></div></div></div></footer>
+
+<script>
+let lang='en';
+function toggleLang(){lang=lang==='en'?'ar':'en';document.body.classList.toggle('ar',lang==='ar');document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.documentElement.lang=lang;document.querySelector('.lt').textContent=lang==='en'?'العربية':'English';document.querySelectorAll('[data-lang]').forEach(el=>{el.style.display=el.getAttribute('data-lang')===lang?'':'none'})}
+document.querySelectorAll('[data-lang="ar"]').forEach(el=>el.style.display='none');
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50)});
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
