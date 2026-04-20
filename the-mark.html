@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Mark — Twix Digital Gateway</title>
+<meta name="description" content="One mark. Four letters. A whole philosophy. The crafted identity of Twix Digital Gateway, a niche concierge medical services company.">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/twix_favicon_T_32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/twix_favicon_T_192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/twix_favicon_T_180.png">
+
+<meta property="og:title" content="The Mark — Twix Digital Gateway">
+<meta property="og:description" content="One mark. Four letters. A whole philosophy.">
+<meta property="og:image" content="https://twixdigital.com/og-image.png">
+<meta property="og:url" content="https://twixdigital.com/the-mark.html">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=Amiri:wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700&family=Aref+Ruqaa:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#F5F1E8;
+  --ink-65:rgba(245,241,232,0.82);
+  --ink-55:rgba(245,241,232,0.62);
+  --ink-45:rgba(245,241,232,0.44);
+  --ink-30:rgba(245,241,232,0.26);
+  --parchment:#14100A;
+  --surface:#1B1710;
+  --surface-2:#221D14;
+  --gold:#D4AF37;
+  --gold-deep:#B8962C;
+  --gold-high:#E8C75A;
+  --gold-soft:rgba(212,175,55,0.12);
+  --gold-line:rgba(212,175,55,0.32);
+  --line:rgba(245,241,232,0.10);
+  --line-strong:rgba(245,241,232,0.22);
+  --display:'Cormorant Garamond',Didot,Georgia,serif;
+  --ui:'Inter',-apple-system,'Segoe UI',sans-serif;
+  --ar-display:'Aref Ruqaa','Amiri','Noto Naskh Arabic',serif;
+  --ar-ui:'Tajawal',-apple-system,sans-serif;
+  --ease:cubic-bezier(0.16,1,0.3,1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--ui);background:var(--parchment);color:var(--ink);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-feature-settings:"kern" 1,"liga" 1,"dlig" 1}
+body.ar{font-family:var(--ar-ui);direction:rtl;text-align:right}
+body.ar .display,body.ar h1,body.ar h2,body.ar h3{font-family:var(--ar-display)}
+
+.container{max-width:1220px;margin:0 auto;padding:0 32px}
+
+/* ═══════ NAV ═══════ */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 0;background:rgba(20,16,10,0.82);backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:all .35s var(--ease)}
+nav.scrolled{padding:14px 0;background:rgba(20,16,10,0.96);border-bottom-color:var(--line)}
+nav .container{display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:var(--ink)}
+.logo-word{font-family:var(--display);font-size:22px;font-weight:400;letter-spacing:7px;margin-right:-7px;line-height:1}
+.logo-dot{color:var(--gold);font-size:12px;line-height:1}
+.logo-tag{font-family:var(--display);font-size:11px;font-weight:400;letter-spacing:4px;color:var(--gold);line-height:1}
+.nav-right{display:flex;align-items:center;gap:28px}
+.nav-link{font-family:var(--ui);font-size:11px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink-65);text-decoration:none;transition:color .25s}
+.nav-link:hover{color:var(--ink)}
+body.ar .nav-link{font-family:var(--ar-ui);letter-spacing:0;text-transform:none;font-size:13px}
+.lang-btn{background:transparent;border:1px solid var(--line-strong);color:var(--ink);padding:9px 18px;font-family:var(--ar-ui);font-size:12px;font-weight:500;cursor:pointer;transition:all .25s}
+.lang-btn:hover{background:var(--gold);color:var(--parchment);border-color:var(--gold)}
+
+/* ═══════ HEADER ═══════ */
+.mark-header{padding:160px 0 60px;text-align:center}
+.mark-header .eyebrow{font-family:var(--ui);font-size:11px;font-weight:500;letter-spacing:4.5px;color:var(--gold);text-transform:uppercase;display:inline-flex;align-items:center;gap:16px;margin-bottom:24px}
+.mark-header .eyebrow::before,.mark-header .eyebrow::after{content:'';width:32px;height:1px;background:var(--gold);opacity:.55}
+body.ar .mark-header .eyebrow{font-family:var(--ar-ui);letter-spacing:1px;text-transform:none;font-size:13px}
+.mark-header h1{font-family:var(--display);font-size:clamp(40px,5.2vw,68px);font-weight:300;letter-spacing:-1.2px;line-height:1.08;margin-bottom:22px;color:var(--ink)}
+body.ar .mark-header h1{font-family:var(--ar-display);font-weight:400;letter-spacing:0;line-height:1.3}
+.mark-header h1 em{font-style:italic;color:var(--gold);font-weight:400}
+.mark-header .sub{font-family:var(--display);font-size:20px;font-style:italic;color:var(--ink-55);font-weight:400;max-width:760px;margin:0 auto;line-height:1.65}
+body.ar .mark-header .sub{font-family:var(--ar-ui);font-style:normal;font-size:15px;line-height:1.9}
+
+/* ═══════ ACRONYM CARTOUCHE ═══════ */
+.acronym-band{max-width:960px;margin:60px auto 80px;padding:50px 40px;border-top:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line);background:rgba(212,175,55,0.03);text-align:center}
+.acronym-word{font-family:var(--display);font-size:64px;font-weight:300;letter-spacing:24px;color:var(--gold);margin-left:24px;margin-bottom:32px;line-height:1;font-style:italic}
+.acronym-word .big{color:var(--gold-high);font-style:italic;font-weight:500}
+.acronym-defs{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.acronym-defs > div{text-align:center}
+.acronym-defs .key{font-family:var(--display);font-size:28px;font-style:italic;color:var(--gold);font-weight:500;line-height:1;margin-bottom:6px}
+.acronym-defs .val{font-family:var(--display);font-size:18px;color:var(--ink);font-weight:400;letter-spacing:1px;font-style:italic}
+.acronym-ar{margin-top:32px;padding-top:24px;border-top:1px solid var(--gold-line);font-family:var(--ar-display);font-size:28px;color:var(--gold);font-weight:700;letter-spacing:1px}
+
+/* ═══════ MARK HERO (the SVG display) ═══════ */
+.hero-stage{padding:40px 0 80px;display:flex;justify-content:center;align-items:center}
+.mark-frame{width:min(680px,90vw);aspect-ratio:1/1;position:relative}
+.mark-frame::before,.mark-frame::after{content:'';position:absolute;width:32px;height:32px}
+.mark-frame::before{top:-16px;left:-16px;border-top:1px solid var(--gold);border-left:1px solid var(--gold)}
+.mark-frame::after{bottom:-16px;right:-16px;border-bottom:1px solid var(--gold);border-right:1px solid var(--gold)}
+#master{width:100%;height:100%;display:block}
+
+/* ═══════ SPEC BLOCK ═══════ */
+.spec-block{max-width:880px;margin:60px auto 120px;padding:56px 48px;background:var(--surface);border:1px solid var(--line)}
+.spec-block h2{font-family:var(--display);font-size:34px;font-weight:300;color:var(--ink);letter-spacing:-0.5px;margin-bottom:14px;line-height:1.2}
+body.ar .spec-block h2{font-family:var(--ar-display);font-weight:400;letter-spacing:0;line-height:1.3}
+.spec-block h2 em{font-style:italic;color:var(--gold)}
+.spec-sub{font-family:var(--display);font-style:italic;font-size:17px;color:var(--ink-55);margin-bottom:40px;font-weight:400}
+body.ar .spec-sub{font-family:var(--ar-ui);font-style:normal;font-size:14px;line-height:1.9}
+.spec-grid{display:grid;gap:0}
+.spec-row{display:grid;grid-template-columns:1fr 2fr;gap:32px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.spec-row:last-child{border-bottom:0}
+.spec-row .sk{font-family:var(--ui);font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-weight:500}
+body.ar .spec-row .sk{font-family:var(--ar-ui);font-size:12px;letter-spacing:0;text-transform:none;font-weight:500}
+.spec-row .sv{font-family:var(--display);font-size:19px;color:var(--ink);letter-spacing:.3px;font-weight:400}
+body.ar .spec-row .sv{font-family:var(--ar-ui);font-size:15px;font-weight:400}
+.spec-row .sv em{font-style:italic;color:var(--gold)}
+
+/* ═══════ THREE READING DISTANCES ═══════ */
+.section-title{font-family:var(--display);font-size:clamp(30px,3.8vw,44px);font-weight:300;color:var(--ink);letter-spacing:-0.5px;line-height:1.15;margin-bottom:60px;text-align:center}
+body.ar .section-title{font-family:var(--ar-display);font-weight:400;letter-spacing:0;line-height:1.3}
+.section-title em{font-style:italic;color:var(--gold)}
+.section-eyebrow{font-family:var(--ui);font-size:11px;font-weight:500;letter-spacing:4.5px;color:var(--gold);text-transform:uppercase;text-align:center;margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:16px}
+.section-eyebrow::before,.section-eyebrow::after{content:'';width:32px;height:1px;background:var(--gold);opacity:.55}
+body.ar .section-eyebrow{font-family:var(--ar-ui);letter-spacing:1px;text-transform:none;font-size:13px}
+.reading-section{padding:60px 0 120px}
+.reading-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.reading-card{background:var(--surface);border:1px solid var(--line);padding:36px 28px;position:relative;transition:border-color .5s var(--ease),transform .5s var(--ease)}
+.reading-card::before{content:'';position:absolute;top:0;left:0;width:40px;height:1px;background:var(--gold);transition:width .6s var(--ease)}
+.reading-card:hover{border-color:var(--gold-line);transform:translateY(-4px)}
+.reading-card:hover::before{width:100%}
+.reading-card-label{font-family:var(--ui);font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:18px;font-weight:500}
+body.ar .reading-card-label{font-family:var(--ar-ui);letter-spacing:0;text-transform:none;font-size:12px}
+.reading-card h3{font-family:var(--display);font-size:26px;font-weight:400;color:var(--ink);line-height:1.22;margin-bottom:14px;letter-spacing:-0.3px}
+body.ar .reading-card h3{font-family:var(--ar-display);font-weight:700}
+.reading-card h3 em{font-style:italic;color:var(--gold)}
+.reading-card p{font-family:var(--ui);font-size:13.5px;color:var(--ink-65);line-height:1.75;margin-bottom:28px;font-weight:300}
+body.ar .reading-card p{font-family:var(--ar-ui);font-size:14px;line-height:1.9;font-weight:400}
+.reading-card-mark{aspect-ratio:1/1;border:1px solid var(--line);background:#0A0705;overflow:hidden}
+.reading-card-mark svg{display:block;width:100%;height:100%}
+
+/* ═══════ RETURN CTA ═══════ */
+.return-cta{padding:120px 0;text-align:center;border-top:1px solid var(--line)}
+.return-cta .eyebrow{font-family:var(--ui);font-size:11px;font-weight:500;letter-spacing:4.5px;color:var(--gold);text-transform:uppercase;margin-bottom:24px;display:inline-flex;align-items:center;gap:16px}
+.return-cta .eyebrow::before,.return-cta .eyebrow::after{content:'';width:32px;height:1px;background:var(--gold);opacity:.55}
+body.ar .return-cta .eyebrow{font-family:var(--ar-ui);letter-spacing:1px;text-transform:none;font-size:13px}
+.return-cta h2{font-family:var(--display);font-size:clamp(30px,4vw,48px);font-weight:300;color:var(--ink);letter-spacing:-0.5px;line-height:1.15;margin-bottom:18px;max-width:720px;margin-left:auto;margin-right:auto}
+body.ar .return-cta h2{font-family:var(--ar-display);font-weight:400;letter-spacing:0;line-height:1.3}
+.return-cta h2 em{font-style:italic;color:var(--gold)}
+.return-cta p{font-family:var(--display);font-size:18px;font-style:italic;color:var(--ink-55);max-width:560px;margin:0 auto 40px;line-height:1.6;font-weight:400}
+body.ar .return-cta p{font-family:var(--ar-ui);font-style:normal;font-size:15px;line-height:1.9}
+.btn-gold{display:inline-block;background:var(--gold);color:var(--parchment);font-family:var(--ui);font-size:12px;font-weight:500;letter-spacing:3px;text-transform:uppercase;padding:18px 36px;text-decoration:none;transition:all .3s;border:none}
+body.ar .btn-gold{font-family:var(--ar-ui);letter-spacing:0;text-transform:none;font-size:14px}
+.btn-gold:hover{background:var(--gold-deep);color:var(--ink)}
+
+/* ═══════ FOOTER ═══════ */
+footer{background:#0A0705;color:var(--ink-65);padding:80px 0 36px;border-top:1px solid var(--gold-line);position:relative}
+footer::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:80px;height:1px;background:var(--gold)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:32px}
+.footer-brand{display:flex;flex-direction:column;gap:8px}
+.f-twix{font-family:var(--display);font-size:26px;font-weight:300;letter-spacing:9px;margin-right:-9px;color:var(--ink);line-height:1}
+.f-tag{font-family:var(--display);font-size:10px;letter-spacing:4px;color:var(--gold)}
+.f-acronym{font-family:var(--display);font-style:italic;font-size:11px;color:var(--ink-65);letter-spacing:2.5px;text-transform:uppercase}
+.f-acronym em{color:var(--gold-high);font-style:italic;font-weight:500}
+body.ar .f-acronym{font-family:var(--ar-ui);font-style:normal;letter-spacing:0;text-transform:none;font-size:12px}
+.footer-meta{font-family:var(--ui);font-size:11px;color:var(--ink-45);letter-spacing:1px;text-align:right}
+body.ar .footer-meta{font-family:var(--ar-ui);letter-spacing:0;font-size:12px}
+
+/* ═══════ SCROLL REVEAL ═══════ */
+.rv{opacity:0;transform:translateY(32px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.vis{opacity:1;transform:translateY(0)}
+
+/* ═══════ RESPONSIVE ═══════ */
+@media(max-width:820px){
+  .acronym-word{font-size:44px;letter-spacing:16px}
+  .acronym-defs{grid-template-columns:repeat(2,1fr);gap:20px}
+  .reading-row{grid-template-columns:1fr}
+  .spec-block{padding:40px 28px}
+  .spec-row{grid-template-columns:1fr;gap:6px}
+  .mark-header{padding:120px 0 40px}
+  .container{padding:0 20px}
+  .nav-link{display:none}
+  .nav-right{gap:14px}
+  .footer-inner{flex-direction:column;text-align:center}
+  .footer-meta{text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════ NAV ═══════ -->
+<nav id="nav">
+  <div class="container">
+    <a href="/" class="logo">
+      <span class="logo-word">TWIX</span>
+      <span class="logo-dot">·</span>
+      <span class="logo-tag">DIGITAL GATEWAY</span>
+    </a>
+    <div class="nav-right">
+      <a href="/" class="nav-link"><span data-lang="en">← Home</span><span data-lang="ar">← الرئيسية</span></a>
+      <a href="/#contact" class="nav-link"><span data-lang="en">Correspondence</span><span data-lang="ar">المراسلات</span></a>
+      <button class="lang-btn" onclick="toggleLang()"><span>العربية</span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════ HEADER ═══════ -->
+<header class="mark-header">
+  <div class="container">
+    <div class="eyebrow"><span data-lang="en">The Mark · v2</span><span data-lang="ar">الشعار · الإصدار الثاني</span></div>
+    <h1><span data-lang="en">One mark. <em>Four letters.</em> A whole philosophy.</span><span data-lang="ar">شعارٌ واحد. <em>أربعة أحرف.</em> فلسفةٌ كاملة.</span></h1>
+    <p class="sub"><span data-lang="en">TWIX is not a word. It is a vow made of four words — one per letter. The monogram carries only what matters: the founder's name, the nature of the house, and the quiet ambition behind it.</span><span data-lang="ar">تويكس ليست كلمة. إنها وعدٌ من أربع كلمات — كلمةٌ عن كل حرف. الشعار يحمل فقط ما يهم: اسم المؤسس، وطبيعة البيت، والطموح الهادئ خلفه.</span></p>
+  </div>
+</header>
+
+<!-- ═══════ ACRONYM CARTOUCHE ═══════ -->
+<section class="container">
+  <div class="acronym-band rv">
+    <div class="acronym-word">
+      <span class="big">T</span>&nbsp;&nbsp;<span class="big">W</span>&nbsp;&nbsp;<span class="big">I</span>&nbsp;&nbsp;<span class="big">X</span>
+    </div>
+    <div class="acronym-defs">
+      <div><div class="key">T</div><div class="val"><span data-lang="en">Tailored</span><span data-lang="ar">مُفصّل</span></div></div>
+      <div><div class="key">W</div><div class="val"><span data-lang="en">Wellness</span><span data-lang="ar">عافية</span></div></div>
+      <div><div class="key">I</div><div class="val"><span data-lang="en">Intelligent</span><span data-lang="ar">ذكي</span></div></div>
+      <div><div class="key">X</div><div class="val"><span data-lang="en">e<em>X</em>perience</span><span data-lang="ar">تجربة</span></div></div>
+    </div>
+    <div class="acronym-ar">عافية مفصّلة · تجربة ذكية</div>
+  </div>
+</section>
+
+<!-- ═══════ THE MARK (live SVG) ═══════ -->
+<section class="hero-stage">
+  <div class="mark-frame rv">
+    <svg id="master" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#E8C75A"/>
+          <stop offset="50%" stop-color="#D4AF37"/>
+          <stop offset="100%" stop-color="#B8962C"/>
+        </linearGradient>
+        <filter id="breath" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="6" result="b"/>
+          <feComponentTransfer in="b" result="bf"><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+          <feMerge><feMergeNode in="bf"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <path id="arc-tr" d="M 512 112 A 400 400 0 0 1 912 512" fill="none"/>
+        <path id="arc-tl" d="M 112 512 A 400 400 0 0 1 512 112" fill="none"/>
+        <clipPath id="t-clip">
+          <rect x="252" y="290" width="520" height="96"/>
+          <rect x="460" y="290" width="104" height="440"/>
+        </clipPath>
+        <radialGradient id="centerGlow"><stop offset="0%" stop-color="rgba(212,175,55,0.10)"/><stop offset="70%" stop-color="rgba(212,175,55,0)"/></radialGradient>
+      </defs>
+      <rect width="1024" height="1024" fill="#0A0705"/>
+      <circle cx="512" cy="510" r="360" fill="url(#centerGlow)"/>
+      <circle cx="512" cy="512" r="430" fill="none" stroke="#D4AF37" stroke-opacity="0.20" stroke-width="1"/>
+      <circle cx="512" cy="512" r="412" fill="none" stroke="#D4AF37" stroke-opacity="0.07" stroke-width="0.5"/>
+      <g id="ticks"></g>
+      <g filter="url(#breath)">
+        <text x="512" y="540" text-anchor="middle" dominant-baseline="middle"
+              fill="url(#goldGrad)"
+              font-family="Cormorant Garamond, serif"
+              font-size="540" font-weight="500">T</text>
+      </g>
+      <g clip-path="url(#t-clip)" opacity="0.28">
+        <g id="micro-pattern"></g>
+      </g>
+      <text font-family="Inter, sans-serif" font-size="15" letter-spacing="8" font-weight="500" fill="#D4AF37" fill-opacity="0.62">
+        <textPath href="#arc-tr" startOffset="50%" text-anchor="middle">NICHE CONCIERGE MEDICAL SERVICES</textPath>
+      </text>
+      <text font-family="Inter, sans-serif" font-size="15" letter-spacing="8" font-weight="500" fill="#D4AF37" fill-opacity="0.62">
+        <textPath href="#arc-tl" startOffset="50%" text-anchor="middle">DR. A. ALMALKI</textPath>
+      </text>
+      <text id="twix-en" x="512" y="905" text-anchor="middle" fill="#D4AF37" fill-opacity="0.92"
+            font-family="Cormorant Garamond, serif" font-size="34" font-weight="400" letter-spacing="18">TWIX</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ═══════ SPEC BLOCK ═══════ -->
+<section class="container">
+  <div class="spec-block rv">
+    <h2><span data-lang="en">What stays · <em>what goes</em></span><span data-lang="ar">ما يبقى · <em>ما يذهب</em></span></h2>
+    <div class="spec-sub"><span data-lang="en">Everything that could crowd the mark was removed. Only four facts remain.</span><span data-lang="ar">كل ما كان يمكن أن يزدحم على الشعار أُزيل. تبقى أربع حقائق فقط.</span></div>
+    <div class="spec-grid">
+      <div class="spec-row">
+        <div class="sk"><span data-lang="en">The letter</span><span data-lang="ar">الحرف</span></div>
+        <div class="sv"><span data-lang="en">T · <em>Cormorant 500</em> · gold gradient</span><span data-lang="ar">T · <em>كورمورانت 500</em> · تدرج ذهبي</span></div>
+      </div>
+      <div class="spec-row">
+        <div class="sk"><span data-lang="en">The service</span><span data-lang="ar">الخدمة</span></div>
+        <div class="sv"><span data-lang="en">Niche Concierge Medical Services</span><span data-lang="ar">خدمات طبية متخصصة حسب الطلب</span></div>
+      </div>
+      <div class="spec-row">
+        <div class="sk"><span data-lang="en">The founder</span><span data-lang="ar">المؤسس</span></div>
+        <div class="sv"><span data-lang="en">Dr. A. Almalki · <em>Consultant</em></span><span data-lang="ar">د. ع. المالكي · <em>استشاري</em></span></div>
+      </div>
+      <div class="spec-row">
+        <div class="sk"><span data-lang="en">The wordmark</span><span data-lang="ar">الشعار الكتابي</span></div>
+        <div class="sv">TWIX &nbsp;·&nbsp; <em>set in Cormorant, Latin only</em></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ THREE READING DISTANCES ═══════ -->
+<section class="reading-section container">
+  <div class="section-eyebrow rv"><span data-lang="en">Three reading distances</span><span data-lang="ar">ثلاث مسافات للقراءة</span></div>
+  <h2 class="section-title rv"><span data-lang="en">Seen from far, read up close, <em>understood in whisper.</em></span><span data-lang="ar">يُرى من بعيد، يُقرأ من قريب، <em>يُفهم همساً.</em></span></h2>
+  <div class="reading-row">
+    <div class="reading-card rv">
+      <div class="reading-card-label"><span data-lang="en">10 m · glance</span><span data-lang="ar">١٠ م · لمحة</span></div>
+      <h3><span data-lang="en">The <em>letter</em></span><span data-lang="ar">ال<em>حرف</em></span></h3>
+      <p><span data-lang="en">From across the room — a gold serif T on ink. That's all the eye needs. The acronym is felt, not read.</span><span data-lang="ar">من عبر الغرفة — حرف T ذهبي على حبر. هذا كل ما تحتاجه العين. الاختصار يُحسّ، لا يُقرأ.</span></p>
+      <div class="reading-card-mark">
+        <svg viewBox="0 0 400 400">
+          <rect width="400" height="400" fill="#0A0705"/>
+          <circle cx="200" cy="200" r="168" fill="none" stroke="#D4AF37" stroke-opacity="0.18"/>
+          <text x="200" y="222" text-anchor="middle" dominant-baseline="middle"
+                fill="#D4AF37" font-family="Cormorant Garamond, serif" font-size="280" font-weight="500">T</text>
+        </svg>
+      </div>
+    </div>
+    <div class="reading-card rv">
+      <div class="reading-card-label"><span data-lang="en">2 m · reading</span><span data-lang="ar">٢ م · قراءة</span></div>
+      <h3><span data-lang="en">The <em>wordmark</em></span><span data-lang="ar">ال<em>شعار الكتابي</em></span></h3>
+      <p><span data-lang="en">Closer in, TWIX declares itself in Cormorant. The inscription along the arc names the house and the hand.</span><span data-lang="ar">مع الاقتراب، تُعلن تويكس عن نفسها بخط كورمورانت. النقش على القوس يسمّي البيت واليد.</span></p>
+      <div class="reading-card-mark">
+        <svg viewBox="0 0 400 400">
+          <rect width="400" height="400" fill="#0A0705"/>
+          <defs>
+            <path id="rdtl2" d="M 50 200 A 150 150 0 0 1 200 50" fill="none"/>
+            <path id="rdtr2" d="M 200 50 A 150 150 0 0 1 350 200" fill="none"/>
+          </defs>
+          <circle cx="200" cy="200" r="168" fill="none" stroke="#D4AF37" stroke-opacity="0.20"/>
+          <text x="200" y="215" text-anchor="middle" dominant-baseline="middle"
+                fill="#D4AF37" font-family="Cormorant Garamond, serif" font-size="210" font-weight="500">T</text>
+          <text font-family="Inter,sans-serif" font-size="7" letter-spacing="4" font-weight="500" fill="#D4AF37" fill-opacity="0.65">
+            <textPath href="#rdtr2" startOffset="50%" text-anchor="middle">NICHE CONCIERGE MEDICAL SERVICES</textPath>
+          </text>
+          <text font-family="Inter,sans-serif" font-size="7" letter-spacing="4" font-weight="500" fill="#D4AF37" fill-opacity="0.65">
+            <textPath href="#rdtl2" startOffset="50%" text-anchor="middle">DR. A. ALMALKI</textPath>
+          </text>
+          <text x="200" y="355" text-anchor="middle" fill="#D4AF37" fill-opacity="0.85" font-family="Cormorant Garamond, serif" font-size="15" letter-spacing="8">TWIX</text>
+        </svg>
+      </div>
+    </div>
+    <div class="reading-card rv">
+      <div class="reading-card-label"><span data-lang="en">30 cm · the whisper</span><span data-lang="ar">٣٠ سم · الهمسة</span></div>
+      <h3><span data-lang="en">The <em>acronym</em></span><span data-lang="ar">ال<em>اختصار</em></span></h3>
+      <p><span data-lang="en">Bring your eye close to the T and the secret unfolds: the letters that make TWIX repeat as a hairline pattern inside it. The vow is written on the stone.</span><span data-lang="ar">قرّب عينك من الـ T ويتكشف السر: الأحرف التي تصنع تويكس تتكرر كنقشٍ رفيع بداخله. الوعد مكتوبٌ على الحجر.</span></p>
+      <div class="reading-card-mark">
+        <svg viewBox="0 0 400 400">
+          <rect width="400" height="400" fill="#0A0705"/>
+          <defs>
+            <clipPath id="tclip-mini">
+              <rect x="90" y="120" width="220" height="40"/>
+              <rect x="175" y="120" width="50" height="180"/>
+            </clipPath>
+          </defs>
+          <text x="200" y="230" text-anchor="middle" dominant-baseline="middle" fill="#D4AF37" fill-opacity="0.32" font-family="Cormorant Garamond, serif" font-size="220" font-weight="500">T</text>
+          <g clip-path="url(#tclip-mini)" id="micro-mini"></g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ RETURN CTA ═══════ -->
+<section class="return-cta">
+  <div class="container">
+    <div class="eyebrow"><span data-lang="en">Now you know</span><span data-lang="ar">والآن تعرف</span></div>
+    <h2><span data-lang="en">A mark is only as quiet <em>as its intent is loud.</em></span><span data-lang="ar">الشعار هادئٌ بقدر <em>ما هي النية صاخبة.</em></span></h2>
+    <p><span data-lang="en">You've seen the craft. Now see what it was made for.</span><span data-lang="ar">رأيتَ الحرفة. والآن شاهد ما صُنعت من أجله.</span></p>
+    <a href="/" class="btn-gold"><span data-lang="en">Return to the house</span><span data-lang="ar">العودة إلى البيت</span></a>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="f-twix">TWIX</div>
+        <div class="f-tag">DIGITAL GATEWAY</div>
+        <div class="f-acronym" data-lang="en"><em>T</em>ailored · <em>W</em>ellness · <em>I</em>ntelligent · e<em>X</em>perience</div>
+        <div class="f-acronym" data-lang="ar" style="display:none">عافية مفصّلة · تجربة ذكية</div>
+      </div>
+      <div class="footer-meta">
+        <div>© 2026 Twix Digital Gateway Ltd</div>
+        <div><span data-lang="en">Innovation City · Ras Al Khaimah · UAE</span><span data-lang="ar">مدينة الابتكار · رأس الخيمة · الإمارات</span></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ═══════ LANG TOGGLE ═══════ */
+let lang='en';
+function toggleLang(){
+  lang=lang==='en'?'ar':'en';
+  document.body.classList.toggle('ar',lang==='ar');
+  document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+  document.documentElement.lang=lang;
+  document.querySelector('.lang-btn span').textContent=lang==='en'?'العربية':'English';
+  document.querySelectorAll('[data-lang]').forEach(el=>{
+    el.style.display=el.getAttribute('data-lang')===lang?'':'none';
+  });
+}
+document.querySelectorAll('[data-lang="ar"]').forEach(el=>el.style.display='none');
+
+/* ═══════ NAV SCROLL ═══════ */
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50);
+});
+
+/* ═══════ SCROLL REVEAL ═══════ */
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target);}});
+},{threshold:.1,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+/* ═══════ MASTER MARK DYNAMIC RENDERING ═══════ */
+(function(){
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.getElementById('master');
+
+  const ticksG = svg.querySelector('#ticks');
+  const cx=512, cy=512, outer=430;
+  for (let i=0;i<12;i++){
+    const a = (i * Math.PI*2/12) - Math.PI/2;
+    const len = 14;
+    const x1 = cx + Math.cos(a) * (outer - len/2);
+    const y1 = cy + Math.sin(a) * (outer - len/2);
+    const x2 = cx + Math.cos(a) * (outer + len/2);
+    const y2 = cy + Math.sin(a) * (outer + len/2);
+    const line = document.createElementNS(ns,'line');
+    line.setAttribute('x1',x1);line.setAttribute('y1',y1);line.setAttribute('x2',x2);line.setAttribute('y2',y2);
+    line.setAttribute('stroke','#D4AF37');line.setAttribute('stroke-opacity',0.36);line.setAttribute('stroke-width',1.2);
+    ticksG.appendChild(line);
+  }
+
+  const micro = svg.querySelector('#micro-pattern');
+  const phrase = 'TAILORED · WELLNESS · INTELLIGENT · eXPERIENCE · ';
+  const long = (phrase.repeat(6)).trim();
+  const barTop=298, barBottom=378, crossCount=6;
+  const crossStep = (barBottom-barTop)/crossCount;
+  for (let i=0;i<crossCount;i++){
+    const el = document.createElementNS(ns,'text');
+    el.setAttribute('x',512); el.setAttribute('y', barTop + crossStep*(i+0.8));
+    el.setAttribute('text-anchor','middle');
+    el.setAttribute('fill','#0A0705');
+    el.setAttribute('font-family','JetBrains Mono, Menlo, monospace');
+    el.setAttribute('font-size','7');
+    el.setAttribute('letter-spacing','1.4');
+    el.textContent = long;
+    micro.appendChild(el);
+  }
+  const stemTop=386, stemBottom=726, stemCount=26;
+  const stemStep = (stemBottom-stemTop)/stemCount;
+  for (let i=0;i<stemCount;i++){
+    const el = document.createElementNS(ns,'text');
+    el.setAttribute('x',512); el.setAttribute('y', stemTop + stemStep*(i+0.8));
+    el.setAttribute('text-anchor','middle');
+    el.setAttribute('fill','#0A0705');
+    el.setAttribute('font-family','JetBrains Mono, Menlo, monospace');
+    el.setAttribute('font-size','7');
+    el.setAttribute('letter-spacing','1.4');
+    const word = ['TAILORED','WELLNESS','INTELLIGENT','eXPERIENCE'][i%4];
+    el.textContent = word;
+    micro.appendChild(el);
+  }
+
+  // Mini T card — the 30cm card
+  const mini = document.getElementById('micro-mini');
+  if (mini){
+    for (let i=0;i<5;i++){
+      const el = document.createElementNS(ns,'text');
+      el.setAttribute('x',200); el.setAttribute('y', 125 + i*6);
+      el.setAttribute('text-anchor','middle'); el.setAttribute('fill','#0A0705');
+      el.setAttribute('font-family','JetBrains Mono, monospace');
+      el.setAttribute('font-size','4.2'); el.setAttribute('letter-spacing','0.6');
+      el.textContent = 'TAILORED·WELLNESS·INTELLIGENT·eXPERIENCE';
+      mini.appendChild(el);
+    }
+    const words = ['TAILORED','WELLNESS','INTELLIGENT','eXPERIENCE'];
+    for (let i=0;i<22;i++){
+      const el = document.createElementNS(ns,'text');
+      el.setAttribute('x',200); el.setAttribute('y', 160 + i*6);
+      el.setAttribute('text-anchor','middle'); el.setAttribute('fill','#0A0705');
+      el.setAttribute('font-family','JetBrains Mono, monospace');
+      el.setAttribute('font-size','4.2'); el.setAttribute('letter-spacing','0.7');
+      el.textContent = words[i%4];
+      mini.appendChild(el);
+    }
+  }
+})();
+</script>
+</body>
+</html>
